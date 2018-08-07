@@ -1,9 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+
+import NavLogo from '../../assets/logo-one.jpeg';
 
 export default class App extends Component {
   render() {
     return (
-      <h1>Hello Tom</h1>
+      <Fragment>
+        <h1>Hello Tom</h1>
+        <img src={NavLogo} alt="" />
+      </Fragment>
     );
   }
 }
