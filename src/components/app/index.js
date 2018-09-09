@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from 'react';
-
 import { Route, Switch, BrowserRouter, Link } from 'react-router-dom';
 
 import Landing from '../landing';
 import Projects from '../projects';
 import Drawings from '../drawings';
 import About from '../about';
+import Footer from '../footer';
 
 import NavLogo from '../../assets/header-image-bw.png';
 
@@ -32,6 +32,7 @@ export default class App extends Component {
             <Route path='/drawings' component={ Drawings } />
             <Route path='/about' component={ About } />
           </Switch>
+          <Footer />
         </Fragment>
       </BrowserRouter>
     );
