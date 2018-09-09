@@ -3,7 +3,7 @@
 require('dotenv').config();
 
 const {
-  DefinePlugin
+  DefinePlugin,
 } = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -32,21 +32,21 @@ webpackConfig.plugins = [
 webpackConfig.module = {};
 
 webpackConfig.module.rules = [{
-    test: /\.(png|svg|jpg|gif|jpeg)$/,
-    use: [
-      'file-loader',
-    ],
-  },
-  {
-    test: /\.js$/,
-    exclude: /node_modules/,
-    use: {
-      loader: 'babel-loader',
-      options: {
-        presets: ['env', 'stage-0', 'react'],
-        plugins: ['transform-react-jsx-source'],
-        cacheDirectory: true,
-      },
+  test: /\.(png|svg|jpg|gif|jpeg)$/,
+  use: [
+    'file-loader',
+  ],
+},
+{
+  test: /\.js$/,
+  exclude: /node_modules/,
+  use: {
+    loader: 'babel-loader',
+    options: {
+      presets: ['env', 'stage-0', 'react'],
+      plugins: ['transform-react-jsx-source'],
+      cacheDirectory: true,
     },
   },
+},
 ];

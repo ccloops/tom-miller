@@ -37,7 +37,6 @@ webpackDevConfig.module.rules = [{
     },
   },
   ],
-
 }];
 
 module.exports = merge(commonConfig, webpackDevConfig);
