@@ -31,6 +31,17 @@ webpackConfig.plugins = [
 
 webpackConfig.module = {};
 
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
+};
+
 webpackConfig.module.rules = [{
   test: /\.(png|svg|jpg|gif|jpeg)$/,
   use: [

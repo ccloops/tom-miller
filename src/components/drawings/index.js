@@ -2,8 +2,17 @@ import React, { Component, Fragment } from 'react';
 
 import styled from 'styled-components';
 
-const DrawingsContainer = styled.p`
-  color: red;
+import Drawing from '../../assets/marq-gr-fp-elev.jpeg';
+
+const DrawingsContainer = styled.div`
+  display: grid;
+`;
+
+const DrawingsImages = styled.img`
+  max-width: 30%;
+  border: 2px solid black;
+  padding: 1em;
+  margin: 2em;
 `;
 
 export default class Drawings extends Component {
@@ -11,7 +20,7 @@ export default class Drawings extends Component {
     return (
       <Fragment>
         <DrawingsContainer>
-          I am the Drawings Component
+          <DrawingsImages src={ Drawing } />
         </DrawingsContainer>
       </Fragment>
     );
