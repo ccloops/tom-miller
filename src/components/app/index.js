@@ -1,5 +1,11 @@
 import React, { Component, Fragment } from 'react';
 
+import { Route, Switch, BrowserRouter, Link } from 'react-router-dom';
+
+import Projects from '../projects';
+import Drawings from '../drawings';
+import About from '../about';
+
 import NavLogo from '../../assets/header-image-bw.png';
 import RainbowStructure from '../../assets/utep-driveby.jpg';
 
@@ -9,18 +15,26 @@ import './app.scss';
 export default class App extends Component {
   render() {
     return (
-      <Fragment>
-        <header>
-          <img src={NavLogo} alt='Tom is a tringle' />
-        </header>
-        <ul>
-          <li>Home</li>
-          <li>Projects</li>
-          <li>Drawings</li>
-          <li>About</li>
-        </ul>
-        <img id='rainbow' src={RainbowStructure} alt='rainbow structure' />
-      </Fragment>
+      <BrowserRouter>
+        <Fragment>
+          <header>
+            <img src={NavLogo} alt='Tom is a tringle' />
+          </header>
+          <ul>
+            <li><Link to='/home'>Home</Link></li>
+            <li><Link to='/projects'>Projects</Link></li>
+            <li><Link to='/drawings'>Drawings</Link></li>
+            <li><Link to='/about'>About</Link></li>
+          </ul>
+          <img id='rainbow' src={RainbowStructure} alt='rainbow structure' />
+          <Switch>
+            <Route path='/projects' component={Projects} />
+            <Route path='/drawings' component={Drawings} />
+            <Route path='/about' component={About} />
+          </Switch>
+        </Fragment>
+      </BrowserRouter>
+  
     );
   }
 }
