@@ -10,7 +10,9 @@ export default class About extends Component {
   render() {
     return (
       <Fragment>
-        <AboutParagraph />
+        <AboutParagraph>
+        Hi, my name is Tom Miller.
+        </AboutParagraph>
       </Fragment>
     );
   } 

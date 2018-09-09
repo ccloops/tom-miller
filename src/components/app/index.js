@@ -2,12 +2,12 @@ import React, { Component, Fragment } from 'react';
 
 import { Route, Switch, BrowserRouter, Link } from 'react-router-dom';
 
+import Landing from '../landing';
 import Projects from '../projects';
 import Drawings from '../drawings';
 import About from '../about';
 
 import NavLogo from '../../assets/header-image-bw.png';
-import RainbowStructure from '../../assets/utep-driveby.jpg';
 
 import '../../style/reset.scss';
 import './app.scss';
@@ -26,15 +26,14 @@ export default class App extends Component {
             <li><Link to='/drawings'>Drawings</Link></li>
             <li><Link to='/about'>About</Link></li>
           </ul>
-          <img id='rainbow' src={RainbowStructure} alt='rainbow structure' />
           <Switch>
-            <Route path='/projects' component={Projects} />
-            <Route path='/drawings' component={Drawings} />
-            <Route path='/about' component={About} />
+            <Route path='/home' component={Landing} /> 
+            <Route path='/projects' component={ Projects } />
+            <Route path='/drawings' component={ Drawings } />
+            <Route path='/about' component={ About } />
           </Switch>
         </Fragment>
       </BrowserRouter>
-  
     );
   }
 }
