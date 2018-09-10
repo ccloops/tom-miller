@@ -17,6 +17,10 @@ const FooterElement = styled.li`
   text-align: center;
 `;
 
+// const ImageElement = styled.img`
+//   color: red;
+// `;
+
 export default class Footer extends Component {
   render() {
     return (
