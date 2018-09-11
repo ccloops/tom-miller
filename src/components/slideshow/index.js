@@ -26,21 +26,3 @@ export default class SlideShow extends Component {
     );
   }
 }
-
-// for(let i = 0; i < photos.length; i++) {
-
-// }
-
-// import React, { Component, Fragment } from 'react';
-
-// import Library from '../../assets/domed-library-schematic.pdf';
-// import Chimney from '../../assets/chimney-options.pdf';
-// import Tub from '../../assets/akma-v1-to-tub.pdf';
-
-// export default class SlideShow extends Component {
-//   render() {
-//     return(
-//       <img src={ Library } />
-//     );
-//   }
-// }
