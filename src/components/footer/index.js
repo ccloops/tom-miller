@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const FooterContainer = styled.ul`
   margin: 0.5em auto;
+  margin-top: 2em;
   display: flex;
   position: fixed;
   bottom: 0;

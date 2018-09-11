@@ -21,16 +21,16 @@ export default class App extends Component {
             <img src={NavLogo} alt='Tom is a tringle' />
           </header>
           <ul>
-            <li><Link to='/home'>Home</Link></li>
+            <li><Link to='/'>Home</Link></li>
             <li><Link to='/projects'>Projects</Link></li>
             <li><Link to='/drawings'>Drawings</Link></li>
             <li><Link to='/about'>About</Link></li>
           </ul>
           <Switch>
-            <Route path='/home' component={Landing} /> 
             <Route path='/projects' component={ Projects } />
             <Route path='/drawings' component={ Drawings } />
             <Route path='/about' component={ About } />
+            <Route path='/' component={Landing} /> 
           </Switch>
           <Footer />
         </Fragment>
