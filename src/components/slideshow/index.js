@@ -15,6 +15,7 @@ export default class SlideShow extends Component {
       <Carousel showArrows={ true }>
         <div>
           <img src={ RainbowStructure } />
+          <p className='legend'>Legend 1</p>
         </div>
         <div>
           <img src={ Table } />
