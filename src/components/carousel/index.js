@@ -5,6 +5,11 @@ import RainbowStructure from '../../assets/utep-driveby.jpg';
 import Table from '../../assets/semi-circle-table.jpeg';
 import Chandelier from '../../assets/suncadia-inn-chandelier.jpeg';
 
+const ImageWrapper = styled.img`
+  display: block;
+  margin: 3em auto;
+`; 
+
 export default class Carousel extends Component {
   constructor(props) {
     super(props);
@@ -29,7 +34,7 @@ export default class Carousel extends Component {
 
   render() {
     return (
-      <img onClick={ this.handleClick } src={ this.state.images[this.state.index] } />
+      <ImageWrapper onClick={ this.handleClick } src={ this.state.images[this.state.index] } />
     );
   }
 }
