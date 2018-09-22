@@ -56,9 +56,16 @@ export default class Carousel extends Component {
   render() {
     return (
       <Wrapper>
-        <ImageWrapper onClick={ this.handleClick } src={ this.state.images[this.state.index] } />
-        <LeftArrow> <FontAwesomeIcon icon='arrow-left' /> </LeftArrow>
-        <RightArrow> <FontAwesomeIcon icon='arrow-right' /> </RightArrow>
+        <ImageWrapper 
+          onClick={ this.handleClick } 
+          src={ this.state.images[this.state.index] }
+        />
+        <LeftArrow> 
+          <FontAwesomeIcon icon='arrow-left' /> 
+        </LeftArrow>
+        <RightArrow> 
+          <FontAwesomeIcon icon='arrow-right' /> 
+        </RightArrow>
       </Wrapper>
     );
   }
