@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react';
 
 import RainbowStructure from '../../assets/utep-driveby.jpg';
-import SlideShow from '../slideshow';
+// import SlideShow from '../slideshow';
+import Carousel from '../carousel';
 
 
 import styled from 'styled-components';
@@ -19,7 +20,7 @@ export default class Landing extends Component {
   render() {
     return (
       <Fragment>
-        <SlideShow />
+        <Carousel />
       </Fragment>
     );
   }
