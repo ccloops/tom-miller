@@ -33,8 +33,16 @@ export default class Projects extends Component {
     console.log(this.state);
     return (
       <Fragment>
-        <img className={ !this.state.isFlipped ? 'show' : 'hide' } onClick={ this.handleFlip } src={ RainbowStructure } />
-        <ProjectsContainer className={ !this.state.isFlipped ? 'hide' : 'show' } onClick={ this.handleFlip }>The text I am talking about</ProjectsContainer>
+        <img 
+          className={ !this.state.isFlipped ? 'show' : 'hide' } 
+          onClick={ this.handleFlip } 
+          src={ RainbowStructure } 
+        />
+        <ProjectsContainer 
+          className={ !this.state.isFlipped ? 'hide' : 'show' } 
+          onClick={ this.handleFlip }>
+        The text I am talking about
+        </ProjectsContainer>
       </Fragment>
     );
   }
