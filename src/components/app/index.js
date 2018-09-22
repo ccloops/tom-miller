@@ -1,6 +1,13 @@
 import React, { Component, Fragment } from 'react';
 import { Route, Switch, BrowserRouter, Link } from 'react-router-dom';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faArrowRight);
+library.add(faArrowLeft);
+
 import Landing from '../landing';
 import Projects from '../projects';
 import Drawings from '../drawings';

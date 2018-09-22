@@ -1,0 +1,11 @@
+.show {
+  display: block;
+  margin: 3em auto;
+  cursor: pointer;
+  // transform: rotateY(180deg);
+}
+
+.hide {
+  display: none;
+  cursor: pointer;
+}
