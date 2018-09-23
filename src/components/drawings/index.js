@@ -9,10 +9,11 @@ const DrawingsContainer = styled.div`
 `;
 
 const DrawingsImages = styled.img`
+  display: block;
   max-width: 30%;
   border: 2px solid black;
   padding: 1em;
-  margin: 2em;
+  margin: 5em auto;
 `;
 
 export default class Drawings extends Component {

@@ -2,6 +2,8 @@ import React, { Component, Fragment } from 'react';
 
 import styled from 'styled-components';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const FooterContainer = styled.ul`
   margin: 0.5em auto;
   margin-top: 2em;
