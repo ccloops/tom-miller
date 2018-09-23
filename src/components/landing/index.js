@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
 import RainbowStructure from '../../assets/utep-driveby.jpg';
-// import SlideShow from '../slideshow';
 import Carousel from '../carousel';
 
 
